@@ -1,0 +1,9 @@
+C:\Users\Игорь\Documents\Visual Studio 2013\Projects\vscode\Translator\Translator\bin\Debug\Translator.exe.config
+C:\Users\Игорь\Documents\Visual Studio 2013\Projects\vscode\Translator\Translator\bin\Debug\Translator.exe
+C:\Users\Игорь\Documents\Visual Studio 2013\Projects\vscode\Translator\Translator\bin\Debug\Translator.pdb
+C:\Users\Игорь\Documents\Visual Studio 2013\Projects\vscode\Translator\Translator\obj\Debug\Translator.csprojResolveAssemblyReference.cache
+C:\Users\Игорь\Documents\Visual Studio 2013\Projects\vscode\Translator\Translator\obj\Debug\Translator.Form1.resources
+C:\Users\Игорь\Documents\Visual Studio 2013\Projects\vscode\Translator\Translator\obj\Debug\Translator.Properties.Resources.resources
+C:\Users\Игорь\Documents\Visual Studio 2013\Projects\vscode\Translator\Translator\obj\Debug\Translator.csproj.GenerateResource.Cache
+C:\Users\Игорь\Documents\Visual Studio 2013\Projects\vscode\Translator\Translator\obj\Debug\Translator.exe
+C:\Users\Игорь\Documents\Visual Studio 2013\Projects\vscode\Translator\Translator\obj\Debug\Translator.pdb
