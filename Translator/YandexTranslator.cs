@@ -6,6 +6,8 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
+using Newtonsoft.Json;
+
 namespace Translator
 {
     class YandexTranslator
@@ -18,15 +20,23 @@ namespace Translator
                     + "key=ВАШ API-КЛЮЧ"
                     + "&text=" + s
                     + "&lang=" + lang);
+
                 WebResponse response = request.GetResponse();
 
                 using (StreamReader stream = new StreamReader(response.GetResponseStream()))
                 {
                     string line;
+
                     if ((line = stream.ReadLine()) != null)
                     {
-                        s = line.Substring(line.IndexOf(":[\"") + 3);
-                        s = s.Remove(s.Length - 3);
+                        Translation translation = JsonConvert.DeserializeObject<Translation>(line);
+
+                        s = "";
+
+                        foreach (string str in translation.text)
+                        {
+                            s += str;
+                        }
                     }
                 }
 
@@ -35,5 +45,12 @@ namespace Translator
             else
                 return "";
         }
+    }
+
+    class Translation
+    {
+        public string code { get; set; }
+        public string lang { get; set; }
+        public string[] text { get; set; }
     }
 }
